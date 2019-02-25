@@ -1882,7 +1882,7 @@ motor.right.target = event.args[0] \
     // Check for GET param 'lang'
     var paramString = window.location.search.replace(/^\?|\/$/g, '');
     var vars = paramString.split("&");
-    var lang = 'fr';
+    var lang = 'gr';
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split('=');
         if (pair.length > 1 && pair[0] == 'lang')
@@ -1998,7 +1998,7 @@ motor.right.target = event.args[0] \
             ["r", "κινητήρας %m.leftright target", "motor_target", "αριστερά" ],
             */
         ],
-		fr: [
+	fr: [
             [" ", "moteur %m.leftrightall %n", "scratch_motor", "gauche", 50],
             [" ", "stop moteurs", "scratch_stop"],
             ["w", "avancer %n", "scratch_move", 50],
