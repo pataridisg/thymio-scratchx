@@ -14,6 +14,7 @@
 *	
 * You should have received a copy of the GNU Lesser General Public License
 * along with this program. If not, see <http://www.gnu.org/licenses/>.	
+* Try to translate to Greek by Pataridis Georgios 
 */
 
 (function(ext) {
@@ -1942,8 +1943,62 @@ motor.right.target = event.args[0] \
             ["r", "motor %m.leftright speed", "motor_speed", "left" ],
             ["r", "motor %m.leftright target", "motor_target", "left" ],
             */
-            ],
-        fr: [
+        ],
+        gr: [
+            [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
+            [" ", "σταμάτημα κινητήρων", "scratch_stop"],
+            ["w", "προχώρα %n", "scratch_move", 50],
+            ["w", "προχώρα %n με ταχύτητα %n", "scratch_move_with_speed", 50, 50],
+            ["w", "προχώρα %n για %n δευτερολεπτα", "scratch_move_with_time", 50, 1],
+            ["w", "στρίψε %n", "scratch_turn", 45],
+            ["w", "στρίψε %n με ταχύτητα %n", "scratch_turn_with_speed", 90,50],
+            ["w", "στρίψε %n για %n δευτερόλεπτα", "scratch_turn_with_time", 90,1],
+            ["w", "ακτίνα κύκλου %n γωνία %n", "scratch_arc", 150, 45],
+            [" ", "leds RGB %m.light %n %n %n", "scratch_leds", "όλα", 0, 0, 32],
+            [" ", "θέσε χρώμα leds %n σε %m.light", "scratch_set_leds", 0, "όλα"],
+            [" ", "αλλαγή χρώματος leds %n σε %m.light", "scratch_change_leds", 0, "όλα"],
+            [" ", "leds επόμενη επιλογή %m.leftright", "scratch_next_dial", "αριστερά"],
+            [" ", "leds επιλογή όλα %n %n %n %n %n %n %n %n", "V_leds_circle", 0, 8, 16, 32, 0, 8, 16, 32],
+            [" ", "αισθητηρες leds h %n %n %n %n %n %n %n %n", "V_leds_prox_h", 0, 16, 32, 32, 16, 0, 32, 32],
+            [" ", "αισθητηρες leds v %n %n", "V_leds_prox_v", 32, 32],
+            [" ", "leds κουμπιών %n %n %n %n", "V_leds_buttons", 16, 32, 16, 32],
+            [" ", "leds θερμοκρασίας %n %n", "V_leds_temperature", 32, 8],
+            [" ", "leds rc %n", "V_leds_rc", 16],
+            [" ", "leds ήχου %n", "V_leds_sound", 32],
+            [" ", "σβήσε leds", "scratch_clear_leds"],
+            [" ", "παίξε ήχο συστήματος %m.sounds", "A_sound_system", 1],
+            [" ", "παίξε νότα %n during %n s", "A_sound_freq", 440, 1],
+            [" ", "παίξε ήχο SD %n", "A_sound_play_sd", ""],
+            [" ", "ηχογράφηση %n", "A_sound_record", ""],
+            [" ", "ξαναπαίξε ήχο %n", "A_sound_replay", ""],
+            ["r", "proximity αισθητήρας %n", "proximity", 2],
+            ["r", "proximity αισθητήρας %m.proxsensors", "proximity2", "εμπρός τέρμα αριστερά"],
+            ["r", "proximity αισθητήρες", "prox_horizontal"],
+            ["r", "ground αισθητηρας %n", "ground", 0],
+            ["r", "ground αισθητήρες", "prox_ground_delta"],
+            ["r", "απόσταση %m.sensors", "distance", "εμπρός"],
+            ["r", "γωνία %m.angles", "angle", "εμπρός"],
+            ["b", "άγγιγμα %m.sensors", "touching", "εμπρός"],
+            ["b", "άγγιγμα %m.sensors %n", "touching_threshold", "εμπρός"],
+            ["r", "επίπεδο ήχου", "mic_intensity"],
+            ["b", "ανίχνευση ήχου", "sound_detected"],
+            ["b", "χτύπημα %n", "bump"],
+            ["r", "σύγκρουση %m.tilts", "tilt", "εμπρός-πίσω"],
+            ["R", "θερμοκρασία", "temperature"],
+            ["r", "μέτρηση κινητήρα %m.leftright", "motor", "αριστερά"],
+            ["r", "leds χρώμα %m.light", "leds", "επάνω"],    
+            [" ", "θέσε οδόμετρο %n %n %n", "Q_set_odometer", 90, 0, 0],
+            ["r", "οδόμετρο %m.odo", "odo", "direction"],
+            [" ", "αποστολή %n", "emit", 1],
+            ["r", "παραλαβή", "receive"],
+            ["h", "κουμπί %m.buttons", "button","κέντρο"]
+            
+           /* 
+            ["r", "κινητήρας %m.leftright ταχύτητα", "motor_speed", "αριστερά" ],
+            ["r", "κινητήρας %m.leftright target", "motor_target", "αριστερά" ],
+            */
+        ],
+		fr: [
             [" ", "moteur %m.leftrightall %n", "scratch_motor", "gauche", 50],
             [" ", "stop moteurs", "scratch_stop"],
             ["w", "avancer %n", "scratch_move", 50],
