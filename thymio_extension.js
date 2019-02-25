@@ -1944,11 +1944,11 @@ motor.right.target = event.args[0] \
             ["r", "motor %m.leftright target", "motor_target", "left" ],
             */
         ],
-	gr:[
+	es:[
 		[" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
 		[" ", "σταμάτημα κινητήρων", "scratch_stop"],
 	],
-        pat: [
+        gr: [
             [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
             [" ", "σταμάτημα κινητήρων", "scratch_stop"],
             ["w", "προχώρα %n", "scratch_move", 50],
@@ -2127,7 +2127,7 @@ motor.right.target = event.args[0] \
             buttons: ["center","front","back","left","right"]
 
         },
-	pat:{
+	es:{
 		leftrightall: ["αριστερά", "δεξιά", "όλα"]	
 	},
         gr: {
