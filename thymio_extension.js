@@ -1944,11 +1944,11 @@ motor.right.target = event.args[0] \
             ["r", "motor %m.leftright target", "motor_target", "left" ],
             */
         ],
-	pat:[
+	gr:[
 		[" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
 		[" ", "σταμάτημα κινητήρων", "scratch_stop"],
 	],
-        gr: [
+        pat: [
             [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
             [" ", "σταμάτημα κινητήρων", "scratch_stop"],
             ["w", "προχώρα %n", "scratch_move", 50],
