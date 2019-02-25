@@ -14,7 +14,7 @@
 *	
 * You should have received a copy of the GNU Lesser General Public License
 * along with this program. If not, see <http://www.gnu.org/licenses/>.	
-* Try to translate to Greek by Pataridis Georgios 
+* Translate to Greek by Pataridis Georgios 
 */
 
 (function(ext) {
@@ -2121,6 +2121,20 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["front-back", "top-bottom", "left-right"],
             buttons: ["center","front","back","left","right"]
+
+        },
+        gr: {
+            leftrightall: ["αριστερά", "δεξιά", "όλα"],
+            leftright: ["αριστερά", "δεξιά"],
+            sensors: ["εμπρός", "πίσω", "εδάφους"],
+            proxsensors: ["εμπρός τέρμα αριστερά", "εμπρός αριστερά", "εμπρός κέντρο", "εμπρός δεξιά", "εμπρός τέρμα δεξιά", "πίσω αριστερά", "πίσω δεξιά"],
+            singlelight: ["επάνω", "κάτω-αριστερά", "κάτω-δεξιά"],
+            light: ["όλα", "επάνω", "κάτω", "κάτω-αριστερά", "κάτω-δεξιά"],
+            angles: ["εμπρός", "πίσω", "εδάφους"],
+            sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
+            odo: ["κατεύθυνση", "x", "y"],
+            tilts: ["εμπρός-πίσω", "επάνω-κάτω", "δεξιά-αριστερά"],
+            buttons: ["κέντρο","εμπρός","πίσω","αριστερά","δεξιά"]
 
         },
         fr: {
