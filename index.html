@@ -1,16 +1,7 @@
 <!doctype html>
 
-<html lang="fr">
+<html lang="en">
 <head>
-  
-  <meta charset="utf-8">
-
-  <title>Extension ScratchX pour Thymio</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="activelinkscroll.js"></script>
-  <script src="isotope.pkgd.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107907581-1"></script>
   <script>
@@ -20,25 +11,33 @@
 
     gtag('config', 'UA-107907581-1');
   </script>
+  <meta charset="utf-8">
+
+  <title>ScratchX extension for Thymio</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="activelinkscroll.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
 </head>
 
 <body>
   <a href="#scrolltop" id="scrolltop-button"></a>
   <header id="scrolltop">
     <nav id="lang">
-      <a class="active" href="#">FR</a>
-      <a href="index-en.html">EN</a>
+      <a href="index.html">FR</a>
+      <a class="active" href="#">EN</a>
       <a href="index-it.html">IT</a>
     </nav>
     <div class="container">
     <img src="img/thymio-scratch.png"/>
-    <h1 id="title">Extension pour Scratch</h1>
+    <h1 id="title">ScratchX extension</h1>
     <nav>
       <a href="#introduction">Introduction</a> | 
-      <a href="#startanchor">Premiers pas</a> | 
-      <a href="#activities">Activités</a>  |
+      <a href="#startanchor">Get ready</a> | 
+      <a href="#activities">Activities</a>  |
       <a href="#thymio">Thymio</a> |
-      <a href="#blocks">Blocs</a>
+      <a href="#blocks">Blocks</a>
     </nav>
     </div>
   </header>
@@ -46,7 +45,7 @@
     <div id="about">
       <div class="container">
         <h1 id="content-title">
-          Contrôlez votre robot Thymio avec Scratch!
+        Get ready to control your Thymio robot with Scratch!
         </h1>
       </div>
     </div>
@@ -55,38 +54,33 @@
     <div id="introduction">
       <div class="container">
         <h2 id="content-title">Introduction</h2>
-          <p>Vous pouvez maintenant programmer votre <a href="https://www.thymio.org/fr:thymio">robot Thymio</a> avec <a href="http://scratchx.org/#extensions">l'extension Scratchx</a> afin de lui permettre d'éviter les obstacles, de suivre une ligne, d'éviter de tomber de la table, de lire des codes barres, de faire des dessins, de jouer & enregistrer des sons. utilisez l'accéléromètre et les différents capteurs ! Thymio est un projet éducatif open source et open hardware. <a href="#thymio">En savoir plus...</a></p>
+          <p>Challenge yourself to program with <a href="http://scratchx.org/#extensions">ScratchX Extensions</a> <a href="https://www.thymio.org/en:thymio">the Thymio robot</a> to avoid obstacles, follow a line or avoid to fall from a table, read barcodes, draw pictures, play & record sounds, sense its position with its 3 axes accelerometer or the temperature and much more. Thymio is an open source and open hardware educational project. <a href="#thymio">Learn more...</a></p>
 
-        <p><a href="https://scratch.mit.edu/about/">Scratch</a> est un projet du "Lifelong Kindergarten group" du "MIT Media Lab". </p>
+        <p><a href="https://scratch.mit.edu/about/">Scratch</a> is a project of the Lifelong Kindergarten group of the MIT Media Lab.  </p>
       </div>
     </div>
     <div id="start">
       <div class="container">
-      <h2> De quoi avez-vous besoin ? </h2>
+      <h2> What you need </h2>
         <div class="col33">
           <img style="width: 90%;" src="img/icon-thymio.svg"/>
-          <h4>Un robot Thymio</h4>
+          <h4>A Thymio robot</h4>
         </div>
         <div class="col33">
           <img style="width: 90%;" src="img/icon-dongle.svg"/>
-          <h4>Un dongle sans-fil ou un cable USB</h4>
+          <h4>An USB wireless dongle or and USB cable</h4>
         </div>
         <div class="col33">
           <img style="width: 90%;" src="img/icon-computer.svg"/>
-          <h4>Un ordinateur</h4>
+          <h4>A personal computer connected to the Web</h4>
         </div>
       </div>
    </div>
-   <!--div id="scratch3">
-      <div class="container">
-        <h2>Découvrez Scratch 3 </h2>
-      </div>
-    </div-->
    <div class="no-anchor clear" id="startanchor">
     <div class="container">
-      <h2> Premiers pas </h2>
+      <h2> Get ready </h2>
         <div class="col33 step">
-          <h4>1) Téléchargez Aseba</h4>
+          <h4>1) Download Aseba </h4>
           <div id="download-aseba">
             <a href="https://aseba.wdfiles.com/local--files/en:wininstall/aseba-1.6.1.exe">
               Windows
@@ -97,113 +91,111 @@
           <p class="details">Version 1.6.1</p>
         </div>
         <div class="col33 step">
-          <h4>2) Branchez Thymio & lancez Thymio Web Bridge</h4>
+          <h4>2) Turn on Thymio and launch Thymio Web Bridge</h4>
           <img src="img/sctarch-block.png"/>
-          <p class="details">Cette application crée un pont entre Thymio et Scratch !</p>
+          <p class="details">This application is the bridge between Thymio and Scratch</p>
         </div>
         <div class="col33 step">
-          <h4>3) Lancez l'extension scratch</h4>
-          <!--img  src="img/scratch-logo.png"/--></a>
-          <a class="library-sel" href="http://scratchx.org/?url=http://mobsya.github.io/thymio-scratchx/thymio_extension_beginner.js&lang=fr#scratch">Blocs débutant</a>
-          <a class="library-sel" href="http://scratchx.org/?url=http://mobsya.github.io/thymio-scratchx/thymio_extension_intermediate.js&lang=fr#scratch">Blocs intermédiaire</a>
-          <a class="library-sel" href="http://scratchx.org/?url=http://mobsya.github.io/thymio-scratchx/thymio_extension_advanced.js&lang=fr#scratch">Blocs avancé</a>
-          <a class="library-sel" href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/thymio_extension.js&lang=fr#scratch">Tous les blocs</a>
-          <a class="library-sel scratch3" href="https://mobsya.github.io/scratch-gui/"><span>Beta & MOOC</span> Scratch 3</a>
-          <!--p class="details">Si la lumière à droite de Thymio dans la fenêtre "more Blocks" est verte, vous pouvez programmer !</p-->
+          <h4>3) Launch Scratch</h4>
+          <img  src="img/scratch-logo.png"/></a>
+          <a class="library-sel" href="http://scratchx.org/?url=http://mobsya.github.io/thymio-scratchx/thymio_extension_beginner.js&lang=en#scratch">Beginner Blocks</a>
+          <a class="library-sel" href="http://scratchx.org/?url=http://mobsya.github.io/thymio-scratchx/thymio_extension_intermediate.js&lang=en#scratch">Intermediate Blocks</a>
+          <a class="library-sel" href="http://scratchx.org/?url=http://mobsya.github.io/thymio-scratchx/thymio_extension_advanced.js&lang=en#scratch">Advanced Blocks</a>
+          <a class="library-sel" href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/thymio_extension.js&lang=en#scratch">All Blocks</a>
+          <a class="library-sel scratch3" href="https://mobsya.github.io/scratch-gui/"><span>Beta & MOOC (French)</span> Scratch 3</a>
         </div>
       </div>
     </div>
-  
     <div id="activities">
       <div class="container">
-        <h2> Essayez nos activités ! </h2>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/thymio-space.sbx&lang=fr#scratch">
+        <h2> Try out a few Challenge Activities </h2>
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/thymio-space_en.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/spacethymio-prev.png"/>
             <div class="activity-desc">
               <h3>Space Thymio</h3>
-              <p>Utilisez Thymio comme une manette et détruisez les astéroides !</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <p>Use Thymio as a remote control and shoot the asteroids!</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/watchdog.sbx&lang=fr#scratch">
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/watchdog_en.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-dog.png"/>
             <div class="activity-desc">
-              <h3>Chien de garde !</h3>
-              <p>Faites en sorte que Thymio émette une alarme lorsqu'il voit quelque chose !</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>Watch dog</h3>
+              <p>Transform Thymio to make noise when it sees something in front of it.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/mule.sbx&lang=fr#scratch">
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/mule_en.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-stub.png"/>
             <div class="activity-desc">
-              <h3>La tête de mule</h3>
-              <p>Programmez Thymio pour qu'il réponde inversement aux ordres.</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>Stubborn mule</h3>
+              <p>Program Thymio to do the opposite of your orders. When you press the forward arrow it goes backward, the left arrow makes the robot turn left etc.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/chameleon.sbx&lang=fr#scratch">
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/chameleon_en.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-chameleon.png"/>
             <div class="activity-desc">
-              <h3>Le caméléon</h3>
-              <p>Associez une couleur différente pour chaque capteur de proximité !</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>The chameleon</h3>
+              <p>Make Thymio light up in different colours when it sees something near. Assign a different colour for each sensor.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-         <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/careful_driver.sbx&lang=fr#scratch">
+         <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/careful_driver_en.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-race.png"/>
             <div class="activity-desc">
-              <h3>Le bon conducteur</h3>
-              <p>programmez Thymio pour qu'il suive une ligne noire ! Il faut qu'il s'arrête si il voit un obstacle.</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>The careful driver </h3>
+              <p>Let Thymio follow a large black trail. Make it stop when it sees an obstacle in front of it.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/piano.sbx&lang=fr#scratch">
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/piano.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-piano.png"/>
             <div class="activity-desc">
               <h3>Piano</h3>
-              <p>Associe chaque capteur avant avec un son et joue du piano en passant tes doigts sur les capteurs.</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <p>Associate every front sensor with a sound or a melody. Play it by moving fingers in front of the sensors.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/flower.sbx&lang=fr#scratch">
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/flower_en.sbx&lang=en#scratch">
         <div class="activity">
             <img src="img/thymio-flower.png"/>
             <div class="activity-desc">
-              <h3>Dessine une fleur !</h3>
-              <p>Placez un stylo dans Thymio et programmez-le pour qu'il dessine une fleur.</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>Draw a Flower</h3>
+              <p>Put a felt pen in the pen holder hole of Thymio and program it to draw a flower.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-         <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/telegraph.sbx&lang=fr#scratch">
+         <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/telegraph.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-morse.png"/>
             <div class="activity-desc">
-              <h3>Le télégraphe</h3>
-              <p>Programmez Thymio afin de pouvoir l'utiliser comme un télégraphe grâce au sons qu'il emet.</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>The Telegraph</h3>
+              <p>Use Thymio for Morse code. Associate each sensor to one letter.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
-        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/crash_preventing_system.sbx&lang=fr#scratch">
+        <a href="http://scratchx.org/?url=https://mobsya.github.io/thymio-scratchx/activities/crash_preventing_system_en.sbx&lang=en#scratch">
           <div class="activity">
             <img src="img/thymio-crash.png"/>
             <div class="activity-desc">
-              <h3>Le freinage en douceur</h3>
-              <p>Faites en sorte que Thymio ralentisse lorsqu'il s'approche d'un obstacle et qu'il s'arrête lors qu'il est très proche.</p>
-              <p class="blue-cta">Cliquez pour télécharger</p>
+              <h3>The crash preventing system </h3>
+              <p>Control the sensitivity of the proximity sensors and control the speed of Thymio when it gets closer to an obstacle making it stop before crashing.</p>
+              <p class="blue-cta">Click here</p>
             </div>
           </div>
         </a>
@@ -212,303 +204,301 @@
   </div>
     <div id="thymio">
       <div class="container">
-        <h2>Quelles sont les caractéristiques de THYMIO ?</h2>
+        <h2>What are the THYMIO'S features?</h2>
         <p>
-          Le projet Thymio est le résultat d'une collaboration de plusieurs institutions et contributeurs reconnus mondialement. Le projet est populaire en France et en Suisse et commence à s'étendre dans le monde entier.  <a href="https://www.thymio.org/fr:thymiophilosophy">En savoir plus...</a>
-
+          The Thymio project is the result of the collaboration of several world class institutions and contributors and is now popular in France, Switzerland.  <a href="https://www.thymio.org/en:thymiophilosophy">Learn more...</a>
         </p>
         </div>
-        <img style="width:100%" src="img/caracteristiques.jpg"/>
+        <img style="width:100%" src="img/caracteristiques-en.jpg"/>
         <div class="container">
-        <h2 style="margin-top:40px">À propos de l'extension ScratchX pour Thymio </h2>
+        <h2 style="margin-top:40px">About ScratchX Extensions for Thymio </h2>
+
         <p>
-          L'extention ScatchX pour Thymio est développé et maintenue par <a href="http://www.mobsya.org/fr/mobsya">Mobsya</a>, une association à but non lucratif pour la robotique éducative, avec le soutien de l'écosystème Thymio. Mobsya distribue le robot open source et open hardware Thymio, son software et des activités éducatives.
-        </p>
+        The ScratchX Extensions for Thymio is developed and maintained by <a href="http://www.mobsya.org/en/mobsya">Mobsya</a>, a non for profit association for the educational robotics, with the support of the Thymio ecosystem.
+Mobsya distributes the open source and open hardware Thymio robot, its software and learning activities. 
+          </p>
       </div>
     </div>
   <div id="blocks">
       <div class="container">
-        <h2> Blocs </h2>
+        <h2> Blocks </h2>
         <div id="block-container">
         <!-- SORTING SELECTION MENU-->
           <div class="button-group filter-button-group">
-            <button data-filter="*">Tous</button>
-            <button data-filter=".mouvement">Mouvements</button>
+            <button data-filter="*">All blocks</button>
+            <button data-filter=".mouvement">Movement</button>
             <button data-filter=".led">Leds</button>
-            <button data-filter=".sensor">Capteurs</button>
-            <button data-filter=".sound">Sons</button>
-            <button data-filter=".network">Réseau</button>
+            <button data-filter=".sensor">Sensors</button>
+            <button data-filter=".sound">Sound</button>
+            <button data-filter=".network">Network</button>
           </div>
         <!-- LIST -->
           <div id="block-list">
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b1.svg">
+              <img src="img/svgb/en/b1.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">avancer(<span>distance (~mm)</span>)</p>
-              <p class="block-description">Avancer de distance en "simili mm". Si la distance est négative, le robot recule. Vitesse environ 100mm/s. Si la valeur est non renseignée, le robot ne s'arrête pas.</p>
+              <p class="info">move(<span>distance (~mm)</span>)</p>
+              <p class="block-description">Move for a certain distance in pseudo-milimeters. If the distance is negative, the robot moves backwards. Speed around 100 mm/s. If the value is not typed, the robot doesn't stop.</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b2.svg">
+              <img src="img/svgb/en/b2.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">avancer(<span>distance (~mm)</span>) avec vitesse (<span>valeur (~mm/s)</span>)</p>
-              <p class="block-description">Avancer de distance (approx. des mm) avec une vitesse donnée (approx. des mm/s). Si la distance est négative, le robot recule. Si la valeur est non renseignée, le robot ne s'arrête pas.</p>
+              <p class="info">move(<span>distance (~mm)</span>) with speed (<span>value (~mm/s)</span>)</p>
+              <p class="block-description">Move for a certain distance (approx. mm) with a given speed (approx. mm/s). If the distance is negative, the robot moves backwards. If the value is not typed, the robot doesn't stop.</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b3.svg">
+              <img src="img/svgb/en/b3.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">avancer (<span>distance</span>) en (<span>durée</span>) s</p>
-              <p class="block-description">Avance de valeur en "simili mm" en durée secondes. Si la distance est négative, le robot recule.</p>
+              <p class="info">move(<span>distance</span>) in (<span>duration</span>)</p>
+              <p class="block-description">Move for a certain distance (approx. mm) in a certain time (seconds). If the distance is negative, the robot moves backwards.</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b4.svg">
+              <img src="img/svgb/en/b4.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Cercle rayon(<span>rayon</span>) angle (<span>angle</span></p>
-              <p class="block-description">Arc de cercle de rayon "mm" et d'angle en "degrés". Si le rayon > 0, il va vers l'avant sinon vers l'arrière. Si angle > 0, commence à droite, si négatif, commence à gauche.</p>
+              <p class="info">Circle radius (<span>radius</span>) in (<span>duration</span> s</p>
+              <p class="block-description">Arc of a circle of a certain radius (in approx. mm) and of a certain angle (in approx. degrees). If the radius is bigger than 0, it goes forward, otherwise it goes backwards. If the angle is bigger than 0, it goes clockwise, otherwise counterclockwise (when radius > 0).</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b5.svg">
+              <img src="img/svgb/en/b5.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">tourner (<span>angle (~degrés)</span>)</p>
-              <p class="block-description">Tourne sur place de angle en "simili degrés" (vers la gauche si < 0. Vers la droite si > 0) puis s'arrête.
-              Imprécis, d'où l'absence d'unité indiquée.</p>
+              <p class="info">turn(<span>angle (~degrees)</span>)</p>
+              <p class="block-description">Turn on itself of an angle in approx. degrees. Clockwise when angle > 0, counterclockwise when angle < 0.</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b6.svg">
+              <img src="img/svgb/en/b6.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">tourner(<span>angle (~degrés)</span>) en <span>(durée)</span> s</p>
-              <p class="block-description">Tourne sur place de valeur en "degrès" en durée secondes (vers la gauche si > 0, vers la droite si < 0) avec une vitesse donnée. Si angle non renseigné, le robot ne s'arrête pas et tourne en continu.
-              </p>
+              <p class="info">turn(<span>angle (~degrees)</span>) in <span>(duration)</span> s</p>
+              <p class="block-description">Turn on itself of an angle in approx. degrees in a time of a certain duration (seconds). Clockwise when angle > 0, counterclockwise when angle < 0.</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b7.svg">
+              <img src="img/svgb/en/b7.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">moteur[<span>gauche, droite</span> or <span>tous</span>]</p>
-              <p class="block-description">Fixe la puissance des moteurs gauche,droite ou les deux en unités Aseba (de -500 à 500).</p>
+              <p class="info">motor[<span>left, right</span> or <span>all</span>]</p>
+              <p class="block-description">Set the speed of left, right or both motors in Aseba unity (from -500 to 500).</p>
             </div>
             <div class="block-item mouvement">
-              <img src="img/svgb/fr/b8.svg">
-              <p class="block-description">Arrête les moteurs (puissance à 0)</p>
+              <img src="img/svgb/en/b8.svg">
+              <p class="block-description">Stop motors (speed at 0)</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b9.svg">
+              <img src="img/svgb/en/b9.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds rvb[<span>dessus, arrière-gauche, arrière-droite, tous</span>](<span>valeur rouge</span>)(<span>valeur vert</span>)(<span>valeur bleu</span>)</p>
-              <p class="block-description">Fixe la couleur RVB des leds de dessus et de dessous du robot</p>
+              <p class="info">leds rgb[<span>top, bottom-left, bottom-right, all</span>](<span>Red value</span>)(<span>Green value</span>)(<span>Blue Value</span>)</p>
+              <p class="block-description">Set the color of the RGB LED on the top and bottom of the robot.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b10.svg">
+              <img src="img/svgb/en/b10.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds cadran suivante[<span>gauche, droite</span>]</p>
-              <p class="block-description">Allumer led de la position suivante du cadran vers la gauche ou vers la droite.</p>
+              <p class="info">leds dial next[<span>left, right</span>]</p>
+              <p class="block-description">Turn on the next or previous circle LED on the robot and turn OFF the current one.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b11.svg">
+              <img src="img/svgb/en/b11.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds cadran toutes (<span>led 0</span>)(<span>led 1</span>)(<span>led 2</span>)(<span>led 3</span>)(<span>led 4</span>)(<span>led 5</span>)(<span>led 6</span>)(<span>led 7</span>)</p>
-              <p class="block-description">Allume les leds de 0 à 7 avec une intensité de 0 à 32.</p>
+              <p class="info">leds dial all (<span>led 0</span>)(<span>led 1</span>)(<span>led 2</span>)(<span>led 3</span>)(<span>led 4</span>)(<span>led 5</span>)(<span>led 6</span>)(<span>led 7</span>)</p>
+              <p class="block-description">Turn ON the 8 circle LED on top of the robot with an intensity from 0 to 32.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b12.svg" alt="leds clear">
-              <p class="block-description">Éteint tout sauf les leds associés automatiquement aux capteurs</p>
+              <img src="img/svgb/en/b12.svg" alt="leds clear">
+              <p class="block-description">Turn OFF all LED associated to sensors.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b13.svg">
+              <img src="img/svgb/en/b13.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Leds fixer couleur(<span>valeur</span> (0 à 200)) pour [<span>dessus,dessous,tout</span>]</p>
-              <p class="block-description">Fixe la valeur de couleur pour la partie inférieure ou supérieure du robot ( ou les deux ). <a target="_blank" href="https://wiki.scratch.mit.edu/wiki/Pen_Color_(value)">Codage couleur Scratch</a> de 0 à 200 (0 = rouge).</p>
+              <p class="info">Leds set color(<span>value 0 to 200</span>) on [<span>top,bottom,all</span>]</p>
+              <p class="block-description">Set the value of the colors on the top, bottom or both. <a target="_blank" href="https://wiki.scratch.mit.edu/wiki/Pen_Color_(value)">Scratch colors coding</a> from 0 to 200 (0 = red).</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b14.svg">
+              <img src="img/svgb/en/b14.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Leds changer couleur (<span>valeur</span>) pour [<span>dessus,dessous,tout</span>]</p>
-              <p class="block-description">Ajoute la valeur à la couleur actuelle pour le haut, le bas ou les deux parties du robot. Utilise le <a target="_blank" href="https://wiki.scratch.mit.edu/wiki/Pen_Color_(value)">codage couleur Scratch.</a></p>
+              <p class="info">Leds change color(<span>value</span>) on [<span>top,bottom,all</span>]</p>
+              <p class="block-description">Adds the chosen value to the current color of the robot (top, bottom or both). Uses the <a target="_blank" href="https://wiki.scratch.mit.edu/wiki/Pen_Color_(value)">Scratch colors coding</a></p>
             </div>
             <div class="block-item sound">
-              <img src="img/svgb/fr/b15.svg">
+              <img src="img/svgb/en/b15.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">enregistrer son (<span>valeur</span>)</p>
-              <p class="block-description">Enregistre le son rx.wav de la carte SD où x est un nombre entier (par exemple, r1.wav).</p>
+              <p class="info">record sound (<span>value</span>)</p>
+              <p class="block-description">Record the sound rx.wav on the microSD card of the robot where x is an integer (for example r1.wav).</p>
             </div>
             <div class="block-item sound">
-              <img src="img/svgb/fr/b16.svg">
+              <img src="img/svgb/en/b16.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">rejouer son (<span>valeur</span>)</p>
-              <p class="block-description">Rejoue le son enregistré rx.wav sur la carte SD où x est un nombre entier (par exemple, r1.wav).</p>
+              <p class="info">replay sound (<span>value</span>)</p>
+              <p class="block-description">Play the rx.wav sound on the microSD card of the robot where x is an integer (for example r1.wav).
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b17.svg">
+              <img src="img/svgb/en/b17.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">odomètre(<span>direction</span>)(<span>x</span>)(<span>y</span>)</p>
-              <p class="block-description">Initialiser l'odomètre direction en ° et coordonnées x et y en mm. Initialise la position du lutin Thymio dans Scratch afin de le faire correspondre au Thymio physique.</p>
+              <p class="info">set odometer(<span>direction</span>)(<span>x</span>)(<span>y</span>)</p>
+              <p class="block-description">Set the odometer for direction (in degrees) and for initial position (coordinate x and y in millimeters). Set the initial position of the Scratch sprite corresponding to the physical Thymio robot.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b18.svg">
+              <img src="img/svgb/en/b18.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds capteurs h (<span>led 1</span>)(<span>led 2</span>)(<span>led 3</span>)(<span>led 4</span>)(<span>led 5</span>)(<span>led 6</span>)(<span>led 7</span>)(<span>led 8</span>)</p>
-              <p class="block-description">Allume les leds des capteurs horizontaux avec une intensité de 0 à 32 chacune (0 = éteint). Il y a 8 leds (dont 2 pour le capteur central)</p>
+              <p class="info">leds sensors h (<span>led 1</span>)(<span>led 2</span>)(<span>led 3</span>)(<span>led 4</span>)(<span>led 5</span>)(<span>led 6</span>)(<span>led 7</span>)(<span>led 8</span>)</p>
+              <p class="block-description">Set the LED associated to the horizontal proximity sensors with an intensity between 0 (OFF) and 32 (Totally ON). There are 8 LED, two of them for the central sensor.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b19.svg">
+              <img src="img/svgb/en/b19.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds capteurs v (<span>led 1</span>)(<span>led 2</span>)</p>
-              <p class="block-description">Allume les leds des capteurs de dessous avec une intensité de 0 à 32 chacune (0 = éteint).</p>
-            </div>
-            <!--<div class="block-item led">
-              <img src="img/svgb/fr/b20.svg">
-              <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds boutons (<span>led 1</span>)(<span>led 2</span>)(<span>led 3</span>)(<span>led 4</span>)</p>
-              <p class="block-description">Allume les leds des boutons avec une intensité de 0 à 32 chacune (0 = éteint). Lumière ponctuelle. ne dure pas.</p>
-            </div>-->
-            <div class="block-item led">
-              <img src="img/svgb/fr/b21.svg">
-              <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds temperature(<span>rouge</span>)(<span>bleu</span>)</p>
-              <p class="block-description">Allume les leds ("chaude" rouge, froide" bleu) avec une intensité de 0 à 32 chacune (0 = éteint).</p>
+              <p class="info">leds sensors v (<span>led 1</span>)(<span>led 2</span>)</p>
+              <p class="block-description">Set the LED associated to the ground sensors with an intensity between 0 (OFF) and 32 (Totally ON).</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b22.svg">
+              <img src="img/svgb/en/b20.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds microphone (<span>valeur</span>)</p>
-              <p class="block-description">Allume la led du micro avec une intensité de 0 à 32 (0 = éteint).</p>
+              <p class="info">leds buttons (<span>led 1</span>)(<span>led 2</span>)(<span>led 3</span>)(<span>led 4</span>)</p>
+              <p class="block-description">Set the LED associated to the buttons with an intensity between 0 (OFF) and 32 (Totally ON). These LED just blink and will not stay ON.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b23.svg">
+              <img src="img/svgb/en/b21.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds rc (<span>valeur</span>)</p>
-              <p class="block-description">Allume la led de la télécommande avec une intensité de 0 à 32 (0 = éteint).</p>
+              <p class="info">leds temperature(<span>red</span>)(<span>blue</span>)</p>
+              <p class="block-description">Set the temperature LED (red meaning hot, blue meaning cold) with an intensity between 0 (OFF) and 32 (Totally ON).</p>
+            </div>
+            <div class="block-item led">
+              <img src="img/svgb/en/b22.svg">
+              <h5 class="syntax">Syntax:</h5>
+              <p class="info">leds sound (<span>value</span>)</p>
+              <p class="block-description">Set the microphone LED with an intensity between 0 (OFF) and 32 (Totally ON).</p>
+            </div>
+            <div class="block-item led">
+              <img src="img/svgb/en/b23.svg">
+              <h5 class="syntax">Syntax:</h5>
+              <p class="info">leds rc (<span>value</span>)</p>
+              <p class="block-description">Set the remote control LED with an intensity between 0 (OFF) and 32 (Totally ON).</p>
             </div>
             <div class="block-item network">
-              <img src="img/svgb/fr/b24.svg">
+              <img src="img/svgb/en/b24.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">emission (<span>valeur</span>)</p>
-              <p class="block-description">Envoie une valeur entière 10 bits par les capteurs de proximité horizontaux (broadcast local). Utilise prox.comm.tx</p>
+              <p class="info">emit (<span>value</span>)</p>
+              <p class="block-description">Send a 10-bit value through the horizontal proximity sensors (local broadcast). Uses prox.comm.tx to store the 10-bit value.</p>
             </div>
             <div class="block-item network">
-              <img src="img/svgb/fr/b25.svg">
+              <img src="img/svgb/en/b25.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Reception (<span>valeur</span>)</p>
-              <p class="block-description">Reçoit un entier 10 bits par les capteurs de proximité horizontaux. Utilise prox.comm.tx</p>
+              <p class="info">Receive (<span>value</span>)</p>
+              <p class="block-description">Receive a 10-bit value through the horizontal proximity sensors. Store it in prox.comm.rx.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b26.svg">
-              <p class="block-description">Retourne la température en °C</p>
+              <img src="img/svgb/en/b26.svg">
+              <p class="block-description">Gives the temperature in Celsius degrees.</p>
             </div>
             <div class="block-item sensor movement">
-              <img src="img/svgb/fr/b27.svg">
+              <img src="img/svgb/en/b27.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Mesure moteurs [<span>gauche, droite, tous</span>]</p>
-              <p class="block-description">Renvoie la puissance réelle (pas celle programmée) des moteurs. Utile pour traiter la dérive des moteurs</p>
+              <p class="info">Measure motors [<span>left, right, all</span>]</p>
+              <p class="block-description">Gives the measured speed of the motors (not the target). Used to compensate motor's drift.</p>
             </div>
             <div class="block-item sensor mouvement">
-              <img src="img/svgb/fr/b28.svg">
+              <img src="img/svgb/en/b28.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">inclinaison [<span>avant-arrière, dessus-dessous, gauche-droite</span>]</p>
-              <p class="block-description">Retourne une valeur d'accéléromètre selon un axe (gauche-droite, dessus-dessous- avant-arrière). Si la valeur est inférieure à 20, un choc a été détecté. De 0 ( rot 0°) à 22 (rot 90°)</p>
+              <p class="info">tilt on [<span>front-back, top-bottom, left-right</span>]</p>
+              <p class="block-description">Gives the value of an accelerometer along one axis (left-right, top-bottom, front-back). From 0 (rotation = 0°) to 22 (rotation = 90°). If the value is greater than 20 or less than -20, a shock is detected.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b29.svg">
+              <img src="img/svgb/en/b29.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">capteur horizontal (<span>n° du capteur</span>)</p>
-              <p class="block-description">Renvoie la valeur retournée par un capteur de proximité horizontal (de 0 à 5 devant, de 6 à 7 derrière). Objet détecté si la valeur est supérieure à 2000 (lumière réfléchie plus importante si l'objet est proche), non détecté si la valeur est inférieure à 1000. Max 5000. Pas très fiable si on veut exploiter une valeur précise supérieure à 0 et inférieure à 1000.</p>
+              <p class="info">proximity sensor (<span>sensor number</span>)</p>
+              <p class="block-description">Gives the value of a horizontal proximity sensor (0 to 5 are front sensors, 6 and 7 are back sensors). An object is detected if the value is greater than 2000, nothing is detected if the value is less than 1000. Maximal value 5000. Not very reliable for precise values in the range 0-1000.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b30.svg">
+              <img src="img/svgb/en/b30.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">capteur horizontal (<span>tout à gauche, gauche, centre, droite, tout à droite, arrière gauche, arrière droite</span>)</p>
-              <p class="block-description">Renvoie la valeur retournée par un capteur de proximité horizontal (tout à gauche, gauche, centre , droite, tout à droite, arrière gauche et arrière droite). Objet détecté si la valeur est supérieure à 2000 (lumière réfléchie plus importante si l'objet est proche), non détecté si la valeur est inférieure à 1000. Max 5000. Pas très fiable si on veut exploiter une valeur précise supérieure à 0 et inférieure à 1000.</p>
+              <p class="info">proximity sensor (<span>far left, left, center, right, far right, back left, back right</span>)</p>
+              <p class="block-description">Gives the value of a horizontal proximity sensor (far left, left, center, right, far right, back left, back right). An object is detected if the value is greater than 2000, nothing is detected if the value is less than 1000. Maximal value 5000. Not very reliable for precise values in the range 0-1000.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b31.svg">
+              <img src="img/svgb/en/b31.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">capteur dessous (<span>N° du capteur</span>)</p>
-              <p class="block-description">Renvoie la valeur retournée par un capteur de dessous de position donnée (de 0 pour le gauche, 1 pour le droit). Détecte un sol blanc si la valeur est supérieure à environ 450 (intensité de la lumière réflèchie plus importante si le sol est clair) et noir si la valeur est inférieure à environ 400. Maximum 950</p>
+              <p class="info">Ground sensor (<span>sensor number</span>)</p>
+              <p class="block-description">Gives the value of a ground sensor (0 for the left one, 1 for the right one). Detects a white ground if the value is greater than 450 and a black ground if the value is less than 400. Maximum value 950.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b32.svg">
+              <img src="img/svgb/en/b32.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Distance [<span>devant, derrière, dessous</span>]</p>
-              <p class="block-description">Distance d'un obstacle calculée à partir des capteurs horizontaux. Renvoie la valeur moyenne pondérée de détection d'un objet fournie par les capteurs horizontaux avants ou arrières ou les capteurs de dessous. De 0 à 190 (190 si il n'y a rien devant le capteur).</p>
+              <p class="info">Distance[<span>front, back, ground</span>]</p>
+              <p class="block-description">Distance computed with the horizontal proximity sensors. Gives a ponderated mean of the front, back or ground sensors. Value between 0 (something very close) and 190 (nothing detected).</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b33.svg">
+              <img src="img/svgb/en/b33.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">Angle [<span>devant, derrière, dessous</span>]</p>
-              <p class="block-description">Angle sous lequel un obstacle est vu depuis le robot, calculé à partir des capteurs horizontaux d'un obstacle (0 puis croît à 32 max puis décroît sur le côté -> 0). Renvoie la position angulaire moyenne pondérée de détection d'un objet donnée par les capteurs horizontaux avants ou arrières ou les capteurs de dessous.
-              Si l'objet est fin, l'angle peut passer brutalement par 0. De plus, même val 0 pour pas d'obstacle ou obstacle en face.</p>
+              <p class="info">Angle [<span>front, back, ground</span>]</p>
+              <p class="block-description">Gives an estimate of the direction of detection of an object computed with the horizontal proximity sensors (approximately 65 far left, 0 center, -65 far right). Be careful, if there is no object, the value is also 0 and if the object is thin the value can change quickly following its position with regards to the robot.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b34.svg">
-              <p class="block-description">Renvoie une chaine des valeurs des 7 capteurs horizontaux. De 0 à environ 5000 (7x).</p>
+              <img src="img/svgb/en/b34.svg">
+              <p class="block-description">Gives a chain of values corresponding to the 7 horizontal proximity sensors, from 0 (nothing) to 5000 (something very close).</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b35.svg">
-              <p class="block-description">Renvoie une chaine des valeurs des 7 capteurs horizontaux. De 0 à environ 5000 (2x).</p>
+              <img src="img/svgb/en/b35.svg">
+              <p class="block-description">Gives a chain of values corresponding to the 2 ground sensors, from 0 (nothing or black surface) to 1000 (white surface).</p>
             </div>
             <div class="block-item sensor sound">
-              <img src="img/svgb/fr/b36.svg">
-              <p class="block-description">Retourne l'intensité du bruit détecté par le micro (supérieure à 2 si un bruit est détecté). De 0 à 10.</p>
+              <img src="img/svgb/en/b36.svg">
+              <p class="block-description">Gives the intensity of a sound detected by the microphone. 0 if there is no noise. Greater than 2 if a noise is detected, maximum 10.</p>
             </div>
             <div class="block-item led">
-              <img src="img/svgb/fr/b37.svg">
+              <img src="img/svgb/en/b37.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">leds couleurs[<span>dessus,dessous-gauche,dessous-droite, tous</span>]
-              <p class="block-description">Donne la couleur LED du haut, du bas gauche ou bas droit. Renvoie le code couleur selon le <a target="_blank" href="https://wiki.scratch.mit.edu/wiki/Pen_Color_(value)">codage couleur Scratch</a>. De 0 à 197</p>
+              <p class="info">leds colors[<span>top,bottom-left,bottom-right,all</span>]
+              <p class="block-description">Gives the current color of the top, bottom-left, bottom right or all of the robot. The value is in <a target="_blank" href="https://wiki.scratch.mit.edu/wiki/Pen_Color_(value)">Scratch colors coding</a> from 0 to 197.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b38.svg">
+              <img src="img/svgb/en/b38.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">mesure odomètre [<span>direction,x,y</span>]</p>
-              <p class="block-description">Renvoie l'angle ou la distance x, y relative à l'initialisation en mm. (10 correspondant à 50mm)</p>
+              <p class="info">odometer[<span>direction,x,y</span>]</p>
+              <p class="block-description">Give the angle or the x or y distance relatively to the initialisation in millimeters (10 corresponding to 50mm).</p>
             </div>
             <div class="block-item sensor sound">
-              <img src="img/svgb/fr/b39.svg">
-              <p class="block-description">Détecte un bruit. Anciennement nommé "clap".</p>
+              <img src="img/svgb/en/b39.svg">
+              <p class="block-description">Detects a noise, named "clap" in VPL.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b40.svg">
-              <p class="block-description">Donne une valeur moyenne des trois axes de l'accélèromètre indiquant un choc.</p>
+              <img src="img/svgb/en/b40.svg">
+              <p class="block-description">Gives a mean value of the three axes of the accelerometer when a shock is detected.</p>
             </div>
             <div class="block-item sound">
-              <img src="img/svgb/fr/b41.svg">
+              <img src="img/svgb/en/b41.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">joeur son SD (<span>valeur</span>)</p>
-              <p class="block-description">Joue le son px.wav de la carte SD où x est un nombre entier (par exemple, p1.wav).</p>
+              <p class="info">play sound SD(<span>value</span>)</p>
+              <p class="block-description">Plays the px.wav sound from the microSD card of the robot where x is an integer (for example p1.wav).</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b42.svg">
+              <img src="img/svgb/en/b42.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">objet détecté [<span>devant, derrière, dessous</span>]</p>
-              <p class="block-description">Détection visuelle devant, derrière ou dessous. Passe à true dès qu'un des capteurs est > 0.</p>
+              <p class="info">object detected [<span>front, back, under</span>]</p>
+              <p class="block-description">Detection of an object in front, back or under the robot. Becomes true as soon as one sensor gets bigger than 0.</p>
             </div>
             <!--<div class="block-item sensor">
-              <img src="img/svgb/fr/b43.svg">
+              <img src="img/svgb/en/b43.svg">
               <h5 class="syntax">Syntax:</h5>
               <p class="info">object detected [<span>front, back, under</span>](<span>value</span>)</p>
               <p class="block-description">NOT WORKING YET</p>
             </div>-->
             <div class="block-item sound">
-              <img src="img/svgb/fr/b44.svg">
+              <img src="img/svgb/en/b44.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">jouer son système [<span>valeur</span>]</p>
-              <p class="block-description">Joue un son système (valeur de 0 à 7).</p>
+              <p class="info">play system sound [<span>value</span>]</p>
+              <p class="block-description">Plays a system sound (on the robot). Value should be between 0 and 7.</p>
             </div>
             <div class="block-item sound">
-              <img src="img/svgb/fr/b45.svg">
+              <img src="img/svgb/en/b45.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">jouer note (<span>Fréquence</span>) pendant (<span>durée</span>) s</p>
-              <p class="block-description">Joue la note de fréquence "Frequency" durant la durée exprimée en secondes.</p>
+              <p class="info">play note (<span>Frequency</span>) during (<span>duration</span>) s</p>
+              <p class="block-description">Play a note at a certain Frequency (Hz) during a certain duration (seconds).</p>
             </div>
             <div class="block-item move">
-              <img src="img/svgb/fr/b46.svg">
+              <img src="img/svgb/en/b46.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">tourner(<span>angle</span>) avec vitesse(<span>vitesse</span>(~mm/s))</p>
-              <p class="block-description">Tourne sur place de valeur en "degrés" (vers la gauche si > vers la droite si < 0) avec une vitesse donnée. Si angle non renseigné, le robot ne s'arrête pas et tourne en continu.</p>
+              <p class="info">turn(<span>angle</span>) with speed(<span>speed</span>(~mm/s))</p>
+              <p class="block-description">Turn of a certain angle (degrees) with a certain speed (approx. mm/s). Turn clockwise if the angle is bigger than 0 and counterclockwise if the angle is less than 0. If the angle is not typed, the robot doesn't stop.</p>
             </div>
             <div class="block-item sensor">
-              <img src="img/svgb/fr/b47.svg">
+              <img src="img/svgb/en/b47.svg">
               <h5 class="syntax">Syntax:</h5>
-              <p class="info">bouton [<span>central, devant, derrière, gauche, droite</span>]</p>
-              <p class="block-description">Indique si un bouton a été touché 0 au 1 (faux ou vrai)</p>
+              <p class="info">button [<span>center, forward, backward, left, right</span>]</p>
+              <p class="block-description">Indicates if a button has been pressed. Becomes true if the button is pressed.</p>
             </div>
           </div>
         </div>
@@ -516,10 +506,11 @@
     </div>
   <footer>
     <div class="container">
-          <h2>Contributeurs</h2>
+
+      <h2> Contributors</h2>
 
       <p>
-        Scratch pour Thymio a été développé originellement par David Sherman et Didier Roy de l'<a href="https://www.inria.fr/fr/">Inria</a> et Elisa Bernardoni et Paolo Rossetti et Michael Bonani de <a href="http://mobsya.org">Mobsya</a>, basé sur <a href="https://scratch.mit.edu">Scratch du MIT</a> et sur la technologie <a href="http://aseba.io">Aseba</a> et <a href="https://www.thymio.org/">Thymio</a>.
+        Scratch for Thymio has been primarily developed by David Sherman and Didier Roy from <a href="https://www.inria.fr/en/">Inria</a> and Elisa Bernardoni and Paolo Rossetti and Michael Bonani from <a href="http://mobsya.org">Mobsya</a> , based on <a href="https://scratch.mit.edu">Scratch from MIT</a> and the <a href="http://aseba.io">Aseba</a> / <a href="https://www.thymio.org/">Thymio</a> technology.
       </p>
 
       <p style="margin-top:40px;">
