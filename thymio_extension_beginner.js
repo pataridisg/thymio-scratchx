@@ -1966,7 +1966,14 @@ motor.right.target = event.args[0] \
                 ["b", "άγγιγμα %m.sensors %n", "touching_threshold", "εμπρός"],
                 ["r", "proximity αισθητήρας %n", "proximity", 2],
                 ["r", "proximity αισθητήρας %m.proxsensors", "proximity2", "εμπρός τέρμα αριστερά"],
-
+                ["r", "ground αισθητηρας %n", "ground", 0],
+                ["b", "χτύπημα %n", "bump"],
+                ["r", "σύγκρουση %m.tilts", "tilt", "εμπρός-πίσω"],
+                ["R", "θερμοκρασία", "temperature"],
+                ["b", "ανίχνευση ήχου", "sound_detected"],
+                ["r", "επίπεδο ήχου", "mic_intensity"],
+                ["h", "κουμπί %m.buttons", "button","κέντρο"]
+                
 
                 [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
                 [" ", "leds επόμενη επιλογή %m.leftright", "scratch_next_dial", "αριστερά"],
@@ -1984,24 +1991,19 @@ motor.right.target = event.args[0] \
 
 
                 ["r", "proximity αισθητήρες", "prox_horizontal"],
-                ["r", "ground αισθητηρας %n", "ground", 0],
+
                 ["r", "ground αισθητήρες", "prox_ground_delta"],
                 ["r", "απόσταση %m.sensors", "distance", "εμπρός"],
                 ["r", "γωνία %m.angles", "angle", "εμπρός"],
 
 
-                ["r", "επίπεδο ήχου", "mic_intensity"],
-                ["b", "ανίχνευση ήχου", "sound_detected"],
-                ["b", "χτύπημα %n", "bump"],
-                ["r", "σύγκρουση %m.tilts", "tilt", "εμπρός-πίσω"],
-                ["R", "θερμοκρασία", "temperature"],
                 ["r", "μέτρηση κινητήρα %m.leftright", "motor", "αριστερά"],
                 ["r", "leds χρώμα %m.light", "leds", "επάνω"],
                 [" ", "θέσε οδόμετρο %n %n %n", "Q_set_odometer", 90, 0, 0],
                 ["r", "οδόμετρο %m.odo", "odo", "direction"],
                 [" ", "αποστολή %n", "emit", 1],
                 ["r", "παραλαβή", "receive"],
-                ["h", "κουμπί %m.buttons", "button","κέντρο"]
+
 
                /*
                 ["r", "κινητήρας %m.leftright ταχύτητα", "motor_speed", "αριστερά" ],
