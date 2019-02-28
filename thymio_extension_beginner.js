@@ -1973,8 +1973,8 @@ motor.right.target = event.args[0] \
                 ["b", "ανίχνευση ήχου", "sound_detected"],
                 ["r", "επίπεδο ήχου", "mic_intensity"],
                 ["h", "κουμπί %m.buttons", "button","κέντρο"]
-                
 
+/*
                 [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
                 [" ", "leds επόμενη επιλογή %m.leftright", "scratch_next_dial", "αριστερά"],
                 [" ", "leds επιλογή όλα %n %n %n %n %n %n %n %n", "V_leds_circle", 0, 8, 16, 32, 0, 8, 16, 32],
@@ -2008,7 +2008,7 @@ motor.right.target = event.args[0] \
                /*
                 ["r", "κινητήρας %m.leftright ταχύτητα", "motor_speed", "αριστερά" ],
                 ["r", "κινητήρας %m.leftright target", "motor_target", "αριστερά" ],
-                */
+                */              
             ],
         fr: [
             ["w", "avancer %n", "scratch_move", 50],
