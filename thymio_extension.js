@@ -2123,9 +2123,6 @@ motor.right.target = event.args[0] \
             buttons: ["center","front","back","left","right"]
 
         },
-	es:{
-		leftrightall: ["αριστερά", "δεξιά", "όλα"]
-	},
         gr: {
             leftrightall: ["αριστερά", "δεξιά", "όλα"],
             leftright: ["αριστερά", "δεξιά"],
