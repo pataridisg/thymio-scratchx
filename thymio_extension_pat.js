@@ -1945,7 +1945,6 @@ motor.right.target = event.args[0] \
             */
             ],
         gr: [
-            ["h", "Αρχή Προγράμματος"],
             ["h", "κουμπί %m.buttons", "button","κέντρο"],
             [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερά", 50],
             [" ", "σταμάτημα κινητήρων", "scratch_stop"],
