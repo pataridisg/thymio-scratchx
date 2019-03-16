@@ -1973,7 +1973,7 @@ motor.right.target = event.args[0] \
             // [" ", "ηχογράφηση %n", "A_sound_record", ""],
             // [" ", "ξαναπαίξε ήχο %n", "A_sound_replay", ""],
             // ["r", "proximity αισθητήρας %n", "proximity", 2],
-            // ["r", "proximity αισθητήρας %m.proxsensors", "proximity2", "εμπρός τέρμα αριστερά"],
+            ["r", "proximity αισθητήρας %m.proxsensors", "proximity2", "εμπρός τέρμα αριστερά"],
             // ["r", "proximity αισθητήρες", "prox_horizontal"],
             // ["r", "ground αισθητηρας %n", "ground", 0],
             // ["r", "ground αισθητήρες", "prox_ground_delta"],
