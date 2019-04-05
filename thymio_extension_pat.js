@@ -2169,6 +2169,7 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["front-back", "top-bottom", "left-right"],
             buttons: ["center","front","back","left","right"],
+            notes: ["C", "D", "E", "F", "G", "A", "B",],
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         },
@@ -2184,6 +2185,7 @@ motor.right.target = event.args[0] \
             odo: ["κατεύθυνση", "x", "y"],
             tilts: ["εμπρός-πίσω", "επάνω-κάτω", "δεξιά-αριστερά"],
             buttons: ["κέντρο","εμπρός","πίσω","αριστερά","δεξιά"],
+            notes: ["C", "D", "E", "F", "G", "A", "B",],
             noteduration: ["Μισό", "Τέταρτο", "Όγδοο", "Ολόκληρο", "Διπλό"]
 
         },
