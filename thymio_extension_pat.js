@@ -1579,6 +1579,18 @@ motor.right.target = event.args[0] \
             freq = parseInt(493);
         }
 
+        if (noteduration == menus[lang]['noteduration'][0]) {
+            duration = 1;
+        } else if (noteduration == menus[lang]['noteduration'][1]) {
+            duration = 0.5;
+        } else if (noteduration == menus[lang]['noteduration'][2]) {
+            duration = 0.25;
+        } else if (noteduration == menus[lang]['noteduration'][3]) {
+            duration = 2;
+        } else if (noteduration == menus[lang]['noteduration'][4]) {
+            duration = 4;
+        }
+
         freq = parseInt(freq);
         duration = parseInt(parseFloat(duration) * 60);
 
@@ -2201,6 +2213,7 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["devant-derrière", "dessus-dessous", "gauche-droite à plat"],
             buttons: ["central","devant","derrière", "gauche", "droite"],
+            notes: ["C", "D", "E", "F", "G", "A", "B",],
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         },
@@ -2216,6 +2229,7 @@ motor.right.target = event.args[0] \
             odo: ["direzione", "x", "y"],
             tilts: ["davanti-dietro", "sopra-sotto", "sinistro-destro"],
             buttons: ["centrale","davanti","dietro","sinistra","destra"],
+            notes: ["C", "D", "E", "F", "G", "A", "B",],
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         }
