@@ -201,7 +201,6 @@
 <event size="2" name="V_leds_temperature"/> \
 <event size="1" name="V_leds_sound"/> \
 <event size="2" name="A_sound_freq"/> \
-<event size="2" name="A_sound_note"/> \
 <event size="1" name="A_sound_play"/> \
 <event size="1" name="A_sound_system"/> \
 <event size="1" name="A_sound_replay"/> \
@@ -391,9 +390,6 @@ onevent A_sound_system \
 call sound.system(event.args[0]) \
  \
 onevent A_sound_freq \
-call sound.freq(event.args[0],event.args[1]) \
- \
-onevent A_sound_note \
 call sound.freq(event.args[0],event.args[1]) \
  \
 onevent A_sound_play \
@@ -1550,47 +1546,6 @@ motor.right.target = event.args[0] \
 
     };
 
-    /** Written by Pataridis
-     * Plays a note (symbolic) for a time (fixed)
-     * @param {note} string -  freg in symbols (C, D, E etc.)
-     * @param {noteduration} string -  duration (whole, double etc.)
-     */
-    ext.A_sound_note = function(note, noteduration) {
-
-        if (DEBUG) {
-            console.log("A_sound_note " + note + " " + noteduration);
-        }
-
-        var freq = 0;
-        var duration = 1;
-        if (note == "C") {
-            freq = parseInt(261);
-        } else if (note == "D")  {
-            freq = parseInt(293);
-        } else if (note == "E")  {
-            freq = parseInt(329);
-        } else if (note == "F")  {
-            freq = parseInt(349);
-        } else if (note == "G")  {
-            freq = parseInt(391);
-        } else if (note == "A")  {
-            freq = parseInt(440);
-        } else if (note == "B")  {
-            freq = parseInt(493);
-        }
-
-        freq = parseInt(freq);
-        duration = parseInt(parseFloat(duration) * 60);
-
-
-        var args = Array();
-        args.push(parseInt(freq));
-        args.push(parseInt(duration));
-
-        sendAction('A_sound_freq', args);
-
-    };
-
 
     /**
      * Plays a system sound
@@ -1959,7 +1914,6 @@ motor.right.target = event.args[0] \
             [" ", "leds clear", "scratch_clear_leds"],
             [" ", "play system sound %m.sounds", "A_sound_system", 1],
             [" ", "play note %n during %n s", "A_sound_freq", 440, 1],
-            [" ", "play note %m.notes during %m.noteduration ", "A_sound_note", "C", "Half"],
             [" ", "play sound SD %n", "A_sound_play_sd", ""],
             [" ", "record sound %n", "A_sound_record", ""],
             [" ", "replay sound %n", "A_sound_replay", ""],
@@ -2014,8 +1968,7 @@ motor.right.target = event.args[0] \
             // [" ", "leds ήχου %n", "V_leds_sound", 32],
             [" ", "σβήσε leds", "scratch_clear_leds"],
             // [" ", "παίξε ήχο συστήματος %m.sounds", "A_sound_system", 1],
-            [" ", "παίξε νότα %n για %n δευτερολεπτα", "A_sound_freq", 440, 1],
-            [" ", "παίξε νότα %m.notes για %m.noteduration ", "A_sound_note", "C", "Μισό"],
+            [" ", "παίξε νότα %n during %n s", "A_sound_freq", 440, 1],
             // [" ", "παίξε ήχο SD %n", "A_sound_play_sd", ""],
             // [" ", "ηχογράφηση %n", "A_sound_record", ""],
             // [" ", "ξαναπαίξε ήχο %n", "A_sound_replay", ""],
@@ -2168,8 +2121,7 @@ motor.right.target = event.args[0] \
             sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
             odo: ["direction", "x", "y"],
             tilts: ["front-back", "top-bottom", "left-right"],
-            buttons: ["center","front","back","left","right"],
-            noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
+            buttons: ["center","front","back","left","right"]
 
         },
 	      gr: {
@@ -2183,8 +2135,7 @@ motor.right.target = event.args[0] \
             sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
             odo: ["κατεύθυνση", "x", "y"],
             tilts: ["εμπρός-πίσω", "επάνω-κάτω", "δεξιά-αριστερά"],
-            buttons: ["κέντρο","εμπρός","πίσω","αριστερά","δεξιά"],
-            noteduration: ["Μισό", "Τέταρτο", "Όγδοο", "Ολόκληρο", "Διπλό"]
+            buttons: ["κέντρο","εμπρός","πίσω","αριστερά","δεξιά"]
 
         },
         fr: {
@@ -2198,8 +2149,7 @@ motor.right.target = event.args[0] \
             sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
             odo: ["direction", "x", "y"],
             tilts: ["devant-derrière", "dessus-dessous", "gauche-droite à plat"],
-            buttons: ["central","devant","derrière", "gauche", "droite"],
-            noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
+            buttons: ["central","devant","derrière", "gauche", "droite"]
 
         },
         it: {
@@ -2213,8 +2163,7 @@ motor.right.target = event.args[0] \
             sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
             odo: ["direzione", "x", "y"],
             tilts: ["davanti-dietro", "sopra-sotto", "sinistro-destro"],
-            buttons: ["centrale","davanti","dietro","sinistra","destra"],
-            noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
+            buttons: ["centrale","davanti","dietro","sinistra","destra"]
 
         }
 
