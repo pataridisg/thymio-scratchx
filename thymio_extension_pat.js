@@ -1564,33 +1564,33 @@ motor.right.target = event.args[0] \
         var freq = 0;
         var duration = 1;
         if (note == menus[lang]['notes'][0]) {
-            freq = parseInt(261.6255);
+            freq = parseInt(261);
         } else if (note == menus[lang]['notes'][1])  {
-            freq = parseInt(293.6648);
+            freq = parseInt(293);
         } else if (note == menus[lang]['notes'][2])  {
-            freq = parseInt(329.6276);
+            freq = parseInt(329);
         } else if (note == menus[lang]['notes'][3])  {
-            freq = parseInt(349.2282);
+            freq = parseInt(349);
         } else if (note == menus[lang]['notes'][4])  {
-            freq = parseInt(391.9954);
+            freq = parseInt(391);
         } else if (note == menus[lang]['notes'][5])  {
             freq = parseInt(440);
         } else if (note == menus[lang]['notes'][6])  {
-            freq = parseInt(493.8833);
+            freq = parseInt(493);
         } else if (note == menus[lang]['notes'][7])  {
-            freq = parseInt(523.2511);
+            freq = parseInt(523);
         } else if (note == menus[lang]['notes'][8])  {
-            freq = parseInt(587.3295);
+            freq = parseInt(587);
         } else if (note == menus[lang]['notes'][9])  {
-            freq = parseInt(659.2551);
+            freq = parseInt(659);
         } else if (note == menus[lang]['notes'][10])  {
-            freq = parseInt(698.4565);
+            freq = parseInt(698);
         } else if (note == menus[lang]['notes'][11])  {
-            freq = parseInt(783.9908);
+            freq = parseInt(783);
         } else if (note == menus[lang]['notes'][12])  {
             freq = parseInt(880);
         } else if (note == menus[lang]['notes'][13])  {
-            freq = parseInt(987.7666);
+            freq = parseInt(987);
         }
 
         if (noteduration == menus[lang]['noteduration'][0]) {
