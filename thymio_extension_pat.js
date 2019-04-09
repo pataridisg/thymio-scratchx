@@ -1561,36 +1561,36 @@ motor.right.target = event.args[0] \
             console.log("A_sound_note " + note + " " + noteduration);
         }
 
-        var freq = 0.0;
-        var duration = 1.0;
+        var freq = 0;
+        var duration = 1;
         if (note == menus[lang]['notes'][0]) {
-            freq = parseFloat(261.6255);
+            freq = parseInt(261.6255);
         } else if (note == menus[lang]['notes'][1])  {
-            freq = parseFloat(293.6648);
+            freq = parseInt(293.6648);
         } else if (note == menus[lang]['notes'][2])  {
-            freq = parseFloat(329.6276);
+            freq = parseInt(329.6276);
         } else if (note == menus[lang]['notes'][3])  {
-            freq = parseFloat(349.2282);
+            freq = parseInt(349.2282);
         } else if (note == menus[lang]['notes'][4])  {
-            freq = parseFloat(391.9954);
+            freq = parseInt(391.9954);
         } else if (note == menus[lang]['notes'][5])  {
-            freq = parseFloat(440);
+            freq = parseInt(440);
         } else if (note == menus[lang]['notes'][6])  {
-            freq = parseFloat(493.8833);
+            freq = parseInt(493.8833);
         } else if (note == menus[lang]['notes'][7])  {
-            freq = parseFloat(523.2511);
+            freq = parseInt(523.2511);
         } else if (note == menus[lang]['notes'][8])  {
-            freq = parseFloat(587.3295);
+            freq = parseInt(587.3295);
         } else if (note == menus[lang]['notes'][9])  {
-            freq = parseFloat(659.2551);
+            freq = parseInt(659.2551);
         } else if (note == menus[lang]['notes'][10])  {
-            freq = parseFloat(698.4565);
+            freq = parseInt(698.4565);
         } else if (note == menus[lang]['notes'][11])  {
-            freq = parseFloat(783.9908);
+            freq = parseInt(783.9908);
         } else if (note == menus[lang]['notes'][12])  {
-            freq = parseFloat(880);
+            freq = parseInt(880);
         } else if (note == menus[lang]['notes'][13])  {
-            freq = parseFloat(987.7666);
+            freq = parseInt(987.7666);
         }
 
         if (noteduration == menus[lang]['noteduration'][0]) {
