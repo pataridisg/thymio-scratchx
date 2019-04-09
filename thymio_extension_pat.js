@@ -1564,33 +1564,33 @@ motor.right.target = event.args[0] \
         var freq = 0;
         var duration = 1;
         if (note == menus[lang]['notes'][0]) {
-            freq = parseInt(261);
+            freq = parseInt(261.6255);
         } else if (note == menus[lang]['notes'][1])  {
-            freq = parseInt(293);
+            freq = parseInt(293.6648);
         } else if (note == menus[lang]['notes'][2])  {
-            freq = parseInt(329);
+            freq = parseInt(329.6276);
         } else if (note == menus[lang]['notes'][3])  {
-            freq = parseInt(349);
+            freq = parseInt(349.2282);
         } else if (note == menus[lang]['notes'][4])  {
-            freq = parseInt(391);
+            freq = parseInt(391.9954);
         } else if (note == menus[lang]['notes'][5])  {
             freq = parseInt(440);
         } else if (note == menus[lang]['notes'][6])  {
-            freq = parseInt(493);
+            freq = parseInt(493.8833);
         } else if (note == menus[lang]['notes'][7])  {
-            freq = parseInt(523);
+            freq = parseInt(523.2511);
         } else if (note == menus[lang]['notes'][8])  {
-            freq = parseInt(587);
+            freq = parseInt(587.3295);
         } else if (note == menus[lang]['notes'][9])  {
-            freq = parseInt(659);
+            freq = parseInt(659.2551);
         } else if (note == menus[lang]['notes'][10])  {
-            freq = parseInt(698);
+            freq = parseInt(698.4565);
         } else if (note == menus[lang]['notes'][11])  {
-            freq = parseInt(783);
+            freq = parseInt(783.9908);
         } else if (note == menus[lang]['notes'][12])  {
             freq = parseInt(880);
         } else if (note == menus[lang]['notes'][13])  {
-            freq = parseInt(987);
+            freq = parseInt(987.7666);
         }
 
         if (noteduration == menus[lang]['noteduration'][0]) {
@@ -1601,11 +1601,11 @@ motor.right.target = event.args[0] \
             duration = 0.25;
         } else if (noteduration == menus[lang]['noteduration'][3]) {
             duration = 2;
-        } else if (noteduration == menus[lang]['noteduration'][4]) {
+        } else if (n oteduration == menus[lang]['noteduration'][4]) {
             duration = 4;
         }
 
-        freq = parseInt(freq);
+        freq = parseInt(parseFloat(freq));
         duration = parseInt(parseFloat(duration) * 60);
 
 
