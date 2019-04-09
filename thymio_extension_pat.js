@@ -1561,8 +1561,8 @@ motor.right.target = event.args[0] \
             console.log("A_sound_note " + note + " " + noteduration);
         }
 
-        var freq = 0;
-        var duration = 1;
+        var freq = 0.0;
+        var duration = 1.0;
         if (note == menus[lang]['notes'][0]) {
             freq = parseFloat(261.6255);
         } else if (note == menus[lang]['notes'][1])  {
@@ -1605,7 +1605,7 @@ motor.right.target = event.args[0] \
             duration = 4;
         }
 
-        freq = parseInt(parseFloat(freq));
+        freq = parseInt(freq);
         duration = parseInt(parseFloat(duration) * 60);
 
 
