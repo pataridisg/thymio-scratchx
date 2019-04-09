@@ -1563,20 +1563,34 @@ motor.right.target = event.args[0] \
 
         var freq = 0;
         var duration = 1;
-        if (note == "C") {
+        if (note == menus[lang]['notes'][0]) {
             freq = parseInt(261);
-        } else if (note == "D")  {
+        } else if (note == menus[lang]['notes'][1])  {
             freq = parseInt(293);
-        } else if (note == "E")  {
+        } else if (note == menus[lang]['notes'][2])  {
             freq = parseInt(329);
-        } else if (note == "F")  {
+        } else if (note == menus[lang]['notes'][3])  {
             freq = parseInt(349);
-        } else if (note == "G")  {
+        } else if (note == menus[lang]['notes'][4])  {
             freq = parseInt(391);
-        } else if (note == "A")  {
+        } else if (note == menus[lang]['notes'][5])  {
             freq = parseInt(440);
-        } else if (note == "B")  {
+        } else if (note == menus[lang]['notes'][6])  {
             freq = parseInt(493);
+        } else if (note == menus[lang]['notes'][7])  {
+            freq = parseInt(523);
+        } else if (note == menus[lang]['notes'][8])  {
+            freq = parseInt(587);
+        } else if (note == menus[lang]['notes'][9])  {
+            freq = parseInt(659);
+        } else if (note == menus[lang]['notes'][10])  {
+            freq = parseInt(698);
+        } else if (note == menus[lang]['notes'][11])  {
+            freq = parseInt(783);
+        } else if (note == menus[lang]['notes'][12])  {
+            freq = parseInt(880);
+        } else if (note == menus[lang]['notes'][13])  {
+            freq = parseInt(987);
         }
 
         if (noteduration == menus[lang]['noteduration'][0]) {
@@ -2181,7 +2195,7 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["front-back", "top-bottom", "left-right"],
             buttons: ["center","front","back","left","right"],
-            notes: ["C", "D", "E", "F", "G", "A", "B",],
+            notes: ["C1", "D1", "E1", "F1", "G1", "A1", "B1", "C2", "D2", "E2", "F2", "G2", "A2", "B2"],
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         },
@@ -2197,7 +2211,7 @@ motor.right.target = event.args[0] \
             odo: ["κατεύθυνση", "x", "y"],
             tilts: ["εμπρός-πίσω", "επάνω-κάτω", "δεξιά-αριστερά"],
             buttons: ["κέντρο","εμπρός","πίσω","αριστερά","δεξιά"],
-            notes: ["C", "D", "E", "F", "G", "A", "B",],
+            notes: ["Ντο-1", "Ρε-1", "Μι-1", "Φα-1", "Σολ-1", "Λα-1", "Σι-1", "Ντο-2", "Ρε-2", "Μι-2", "Φα-2", "Σολ-2", "Λα-2", "Σι-2"],
             noteduration: ["Μισό", "Τέταρτο", "Όγδοο", "Ολόκληρο", "Διπλό"]
 
         },
@@ -2213,7 +2227,7 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["devant-derrière", "dessus-dessous", "gauche-droite à plat"],
             buttons: ["central","devant","derrière", "gauche", "droite"],
-            notes: ["C", "D", "E", "F", "G", "A", "B",],
+            notes: ["C1", "D1", "E1", "F1", "G1", "A1", "B1", "C2", "D2", "E2", "F2", "G2", "A2", "B2"],
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         },
@@ -2229,7 +2243,7 @@ motor.right.target = event.args[0] \
             odo: ["direzione", "x", "y"],
             tilts: ["davanti-dietro", "sopra-sotto", "sinistro-destro"],
             buttons: ["centrale","davanti","dietro","sinistra","destra"],
-            notes: ["C", "D", "E", "F", "G", "A", "B",],
+            notes: ["C1", "D1", "E1", "F1", "G1", "A1", "B1", "C2", "D2", "E2", "F2", "G2", "A2", "B2"],
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         }
