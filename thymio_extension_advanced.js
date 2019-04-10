@@ -6,14 +6,14 @@
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU Lesser General Public License as published
 * by the Free Software Foundation, version 3 of the License.
-*	
+*
 * This program is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU Lesser General Public License for more details.
-*	
+*
 * You should have received a copy of the GNU Lesser General Public License
-* along with this program. If not, see <http://www.gnu.org/licenses/>.	
+* along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
 (function(ext) {
@@ -35,7 +35,7 @@
 
 	loadAesl();
 	connect();
-	
+
 
     /**
      * Cleanup function when the extension is unloaded
@@ -109,7 +109,7 @@
 
     function connect() {
 
-       
+
         if (source) {
             source.close();
             source = null;
@@ -127,7 +127,7 @@
 
             eventData = e.data.split(" ");
 	    connected = 2;
-		
+
             if (eventData[0] == "R_state_update") {
                 cachedValues = eventData;
             } else {
@@ -177,7 +177,7 @@
 		if(DEBUG){
 			console.log("Send Aesl for Thymio");
 		}
-		
+
 		var xmlstring='<!DOCTYPE aesl-source> \
 <network> \
 <!--list of global events--> \
@@ -414,13 +414,13 @@ motor.right.target = event.args[0] \
   			data: xmlstring,
   			success: function(data) {
   				connect();
-    	 
+
   			}
 		});
 
 
-      	
-    	
+
+
 
     }
 
@@ -1350,8 +1350,8 @@ motor.right.target = event.args[0] \
 
         sendAction('V_leds_rc', args);
     };
-    
-    
+
+
     /**
      * Lights the ground sensor LEDs
      * @param {fl} number -  front left value (0 to 32)
@@ -1377,7 +1377,7 @@ motor.right.target = event.args[0] \
 		args.push(parseInt(clamp(fr, LMIN, LMAX)));
 		args.push(parseInt(clamp(br, LMIN, LMAX)));
 		args.push(parseInt(clamp(bl, LMIN, LMAX)));
-		
+
         sendAction('V_leds_prox_h', args);
     };
 
@@ -1605,7 +1605,7 @@ motor.right.target = event.args[0] \
             console.log("button "+menu);
         }
         var num = parseInt(cachedValues[2]);
-		
+
 		if (menu == menus[lang]['buttons'][0]) {
 			var center = parseInt((num >> 3) & 1);
 			if(center==1) return true;
@@ -1626,7 +1626,7 @@ motor.right.target = event.args[0] \
 			var right = parseInt((num ) & 1);
 			if(right==1) return true;
 			else return false;
-        } 
+        }
        return false;
     };
 
@@ -1889,6 +1889,7 @@ motor.right.target = event.args[0] \
 
     var blocks = {
         en: [
+            ["h", "button %m.buttons", "button","center"],
             [" ", "motor %m.leftrightall %n", "scratch_motor", "left", 50],
             [" ", "stop motors", "scratch_stop"],
             ["w", "move %n", "scratch_move", 50],
@@ -1932,13 +1933,13 @@ motor.right.target = event.args[0] \
             [" ", "leds rc %n", "V_leds_rc", 16],
             [" ", "leds sound %n", "V_leds_sound", 32],
             [" ", "emit %n", "emit", 1],
-            ["r", "receive", "receive"],
-            ["h", "button %m.buttons", "button","center"]
-           /* 
+            ["r", "receive", "receive"]
+
+           /*
             ["r", "proximity sensor %m.proxsensors", "proximity2", "front far left"],
             ["r", "motor %m.leftright speed", "motor_speed", "left" ],
             ["r", "motor %m.leftright target", "motor_target", "left" ],
-            ["r", "leds color %m.light", "leds", "top"],            
+            ["r", "leds color %m.light", "leds", "top"],
             */
             ],
         fr: [
@@ -1987,7 +1988,7 @@ motor.right.target = event.args[0] \
             [" ", "emission %n", "emit", 1],
             ["r", "reception", "receive"],
             ["h", "bouton %m.buttons", "button","central"]
-            
+
             /*
             ["r", "capteur horizontal %m.proxsensors", "proximity2", "devant extrême gauche"],
             ["r", "moteur %m.leftright vitesse", "motor_speed", "gauche" ],
@@ -2041,13 +2042,13 @@ motor.right.target = event.args[0] \
             [" ", "emetti %n", "emit", 1],
             ["r", "ricezione", "receive"],
             ["h", "bottone %m.buttons", "button","centrale"]
-            /* 
+            /*
             ["r", "sensore prox. %m.proxsensors", "proximity2", "tutto a sinistra"],
             ["r", "moteur %m.leftright vitesse", "motor_speed", "gauche" ],
             ["r", "moteur %m.leftright target", "motor_target", "gauche" ],
             ["r", "colore LED %m.singlelight", "leds", "sopra"],
             */
-            
+
         ]
     };
 
@@ -2100,7 +2101,7 @@ motor.right.target = event.args[0] \
     var descriptor = {
         blocks: blocks[lang],
         menus: menus[lang]
-           
+
     };
 
     // Register the extension
@@ -2234,7 +2235,7 @@ motor.right.target = event.args[0] \
                 rgb[2] = 33 - color % 33;
                 break;
         }
-      
+
         return rgb;
     }
 

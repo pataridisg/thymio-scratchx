@@ -2040,7 +2040,7 @@ motor.right.target = event.args[0] \
             // [" ", "leds ήχου %n", "V_leds_sound", 32],
             [" ", "σβήσε leds", "scratch_clear_leds"],
             // [" ", "παίξε ήχο συστήματος %m.sounds", "A_sound_system", 1],
-            [" ", "παίξε νότα %n για %n δευτερολεπτα", "A_sound_freq", 440, 1],
+            [" ", "παίξε συχνότητα %n για %n δευτερολεπτα", "A_sound_freq", 440, 1],
             [" ", "παίξε νότα %m.notes για %m.noteduration ", "A_sound_note", "Ντο-1", "Μισό"],
             // [" ", "παίξε ήχο SD %n", "A_sound_play_sd", ""],
             // [" ", "ηχογράφηση %n", "A_sound_record", ""],
