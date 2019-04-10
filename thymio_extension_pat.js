@@ -2063,8 +2063,9 @@ motor.right.target = event.args[0] \
             // ["r", "leds χρώμα %m.light", "leds", "επάνω"],
             // [" ", "θέσε οδόμετρο %n %n %n", "Q_set_odometer", 90, 0, 0],
             // ["r", "οδόμετρο %m.odo", "odo", "direction"],
-            // [" ", "αποστολή %n", "emit", 1],
-            // ["r", "παραλαβή", "receive"],
+            ["-"],
+            [" ", "αποστολή %n", "emit", 1],
+            ["r", "παραλαβή", "receive"]
 
 
            /*
