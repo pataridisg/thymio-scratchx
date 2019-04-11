@@ -2016,7 +2016,7 @@ motor.right.target = event.args[0] \
             ["r", "motor %m.leftright target", "motor_target", "left" ],
             */
             ],
-        gr: [
+        el: [
             ["h", "κουμπί %m.buttons", "button","κέντρο"],
             [" ", "κινητήρας %m.leftrightall %n", "scratch_motor", "αριστερός", 50],
             [" ", "σταμάτημα κινητήρων", "scratch_stop"],
@@ -2200,7 +2200,7 @@ motor.right.target = event.args[0] \
             noteduration: ["Half", "Quarter", "Eighth", "Whole", "Double"]
 
         },
-	      gr: {
+	      el: {
             leftrightall: ["αριστερός", "δεξιός", "όλοι"],
             leftright: ["αριστερά", "δεξιά"],
             sensors: ["εμπρός", "πίσω", "εδάφους"],
