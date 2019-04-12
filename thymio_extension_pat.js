@@ -2258,7 +2258,7 @@ motor.right.target = event.args[0] \
     };
 
     // Register the extension
-    ScratchExtensions.register('Thymio', descriptor, ext);
+    ScratchExtensions.register('Thymio-Leon-Pataridis', descriptor, ext);
 
 
     //Utilities
